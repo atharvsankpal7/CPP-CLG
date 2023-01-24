@@ -14,18 +14,20 @@ int main()
     }
     int arr[size];
     int *p = arr;
-    int *p1 = arr;
     for (int i = 0; i < size; i++)
     {
         *p = temp % 10;
         p++;
         temp /= 10;
     }
-    cout << "The number after reversing is -->\n";
+    p = arr;
     for (int i = 0; i < size; i++)
     {
-        cout << *p1;
-        p1++;
+        a *= 10;
+        a += *p;
+        p++;
     }
+    cout << "The number after reversing is --> " << a << endl;
+
     return 0;
 }
