@@ -3,7 +3,6 @@
 using namespace std;
 class Marks
 {
-protected:
     string Name;
     int sub[5];
     string Grade;
@@ -58,6 +57,7 @@ public:
         {
             Grade = "FF";
         }
+        cout << "The name of the student is : " << Name << endl;
         cout << "The sum of the marks of student is :" << sum << endl;
         cout << "The average of the marks of student is :" << avg << endl;
         cout << "The Grade obtained by the student is :" << Grade << endl;
@@ -65,8 +65,13 @@ public:
 };
 int main()
 {
-    Marks s1;
+    Marks s1,s2;
     s1.GetValue();
+    
+    s2.GetValue();
+    
     s1.DisplayValue();
+    
+    s2.DisplayValue();
     return 0;
 }
